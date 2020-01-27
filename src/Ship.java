@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Ship {
   //getter et setter
@@ -26,19 +27,19 @@ public class Ship {
     this.plot = plot;
   }
 
-  public ArrayList getListPlot() {
-    return listPlot;
+  public List getPlotList() {
+    return plotList;
   }
 
-  public void setListPlot(ArrayList listPlot) {
-    this.listPlot = listPlot;
+  public void setPlotList(ArrayList plotList) {
+    this.plotList = plotList;
   }
 
   //
   private ModelShip model;
   private Direction direction;
   private Plot plot;
-  private ArrayList listPlot;
+  private List<Plot> plotList;
 
   //constructeur
   Ship(ModelShip model, Direction direction, Plot plot) {
@@ -46,11 +47,19 @@ public class Ship {
     this.direction = direction;
     this.plot = plot;
 
+    // init liste de cases
+    plotList = new ArrayList<Plot>();
+    //premiere case
+    plotList.add(plot);
+
+    // Pour toute la taille du bateau, calculer les cases suivantes
+    // boucle sur la taille du bateau, et calculer la nouvelle case en fonction de la précedente
+
   }
   //methode
   //TODO
   public boolean isOnPlot(Plot plot){
-    return true;
+    throw new UnsupportedOperationException();
   }
 
 

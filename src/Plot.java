@@ -1,7 +1,8 @@
 public interface Plot {
 
-public void getAbscisse();
-public void getOrdinate();
+
+public int getAbscisse();
+public int getOrdinate();
 
 public Plot getPlotTo(Direction dir);
 }

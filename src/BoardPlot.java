@@ -1,16 +1,20 @@
 public class BoardPlot implements Plot {
-  @Override
-  public void getAbscisse() {
+  private int x;
+  private int y;
 
+  @Override
+  public int getAbscisse() {
+  return x;
   }
 
   @Override
-  public void getOrdinate() {
-
+  public int getOrdinate()
+  {
+    return y;
   }
 
   @Override
   public Plot getPlotTo(Direction dir) {
-    return null;
+    throw new UnsupportedOperationException();
   }
 }
