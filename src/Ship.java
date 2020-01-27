@@ -45,6 +45,7 @@ public class Ship {
     this.model = model;
     this.direction = direction;
     this.plot = plot;
+
   }
   //methode
   //TODO
