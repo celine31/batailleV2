@@ -17,12 +17,10 @@ public class BoardPlot implements Plot {
     return ordonnee;
   }
 
-
   @Override
   public Plot getPlotTo(Direction dir) {
     int nextAbscisse= abcisse;
     int nextOrdonnee= ordonnee;
-
 
     if (dir==Direction.SOUTH){
       nextOrdonnee--;
@@ -36,9 +34,8 @@ public class BoardPlot implements Plot {
     if(dir==Direction.WEST){
       nextAbscisse--;
     }
-
     Plot plot=new BoardPlot(nextAbscisse, nextOrdonnee);
     return plot;
-    // throw new UnsupportedOperationException();
+
   }
 }

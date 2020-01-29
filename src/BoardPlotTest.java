@@ -22,6 +22,7 @@ class BoardPlotTest {
     assertEquals(3 ,newPlot3.getAbscisse());
     assertEquals(1 ,newPlot3.getOrdinate());
 
+    //test east
     final Plot newPlot4 = plot.getPlotTo(Direction.EAST);
     assertEquals(5 ,newPlot4.getAbscisse());
     assertEquals(1 ,newPlot4.getOrdinate());
