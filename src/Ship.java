@@ -13,21 +13,20 @@ public class Ship {
     this.model = model;
     this.direction = direction;
     this.plot = plot;
+    init();
+  }
 
-    // init liste de cases
+  //methode init liste de cases
+  private void init() {
     plotList = new ArrayList<Plot>();
     //premiere case
     plotList.add(plot);
-    int iteration=model.getSize();
-    for (int i=0;i<iteration;i++){
-      Plot newPlot = plot.getPlotTo(direction);
-      plotList.add(newPlot);
+    int iteration = model.getSize();
+    for (int i = 1; i < iteration; i++) {
+      this.plot = this.plot.getPlotTo(this.direction);
+      plotList.add(this.plot);
     }
-    // Pour toute la taille du bateau, calculer les cases suivantes
-    // boucle sur la taille du bateau, et calculer la nouvelle case en fonction de la précedente
   }
-  //methode
-  //TODO
   public boolean isOnPlot(Plot plot){
    if (plotList.contains(plot)){
      return true;
