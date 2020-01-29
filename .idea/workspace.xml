@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0b5f7268-9f2a-4da0-9246-6220caf0a71f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/battle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/battle.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BoardPlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardPlot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardPlotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardPlotTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Direction.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +40,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
@@ -63,7 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BoardPlotTest.getPlotTo">
     <configuration name="ShipTest.isOnPlot" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
       <module name="battle" />
       <option name="PACKAGE_NAME" value="" />
@@ -74,8 +74,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BoardPlotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="battle" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BoardPlotTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardPlotTest.getPlotTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="battle" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BoardPlotTest" />
+      <option name="METHOD_NAME" value="getPlotTo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BoardPlotTest.getPlotTo" />
+        <item itemvalue="JUnit.BoardPlotTest" />
         <item itemvalue="Android JUnit.ShipTest.isOnPlot" />
       </list>
     </recent_temporary>
