@@ -6,13 +6,15 @@ public class Ship {
   private ModelShip model;
   private Direction direction;
   private Plot plot;
+  private ShipPartState state;
   private List<Plot> plotList;
 
   //constructeur
-  Ship(ModelShip model, Direction direction, Plot plot) {
+  Ship(ModelShip model, Direction direction, Plot plot, ShipPartState state) {
     this.model = model;
     this.direction = direction;
     this.plot = plot;
+    this.state = state;
     init();
   }
 
@@ -36,8 +38,19 @@ public class Ship {
     }
   }
 
+  public void isSunk(Ship ship) {
+    if (model.getSize() == 0) {
+      System.out.println("Coulé");
+    }
+  }
+
+  public void receiveShot(Plot shotPlot){
+    throw new UnsupportedOperationException();
+  }
+
+
   //getter et setter
-  public ModelShip getModel() {
+  public ModelShip getModel(){
     return model;
   }
 
@@ -67,5 +80,15 @@ public class Ship {
 
   public void setPlotList(ArrayList plotList) {
     this.plotList = plotList;
+  }
+
+  @Override
+  public String toString() {
+    return "Ship{" +
+      "model=" + model +
+      ", direction=" + direction +
+      ", plot=" + plot +
+      ", plotList=" + plotList +
+      '}';
   }
 }
